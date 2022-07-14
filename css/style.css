@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #ddd;
+
+}
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+nav{
+    /* float: left; */
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    display: inline-block;
+    color: aliceblue;
+    font-weight: 400; 
+}
+h2{
+    display: inline-block;
+    color: aliceblue;
+    font-size: 2rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+p{
+    display: inline-block;
+    color: aliceblue;
+    font-size: 1rem;
+    word-spacing: 0.4em;
+    font-weight: 600;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    padding: 0.6em;
+    border-radius: 1.5rem;
+}
+.nav-tool{
+    display: inline-block;
+    list-style: none;
+    margin-left: 48rem;
+}
+li{
+    display: inline-block;
+   margin: 1rem;
+}
+.header a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+}
+.header a:hover{
+border-bottom: 0.2em solid aliceblue;
+}
+.mid-section{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 1.7rem;
+    transform: translate(-50%,-50%);
+}
+.travel-text{
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
+.mid-section  .button{
+    /* border: 200px solid red; */
+    border: none;
+    border-radius: 3rem;
+    padding: 1.3rem 2rem;
+    background:#fff;
+    color: rgb(255, 146, 164);
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 2em;
+    /* margin-top: 20em; */
+}
+.mid-section .button:hover{
+    background:rgba(232, 242, 252, 0.9);
+}
+
+
+/* ########################Showcase Section styling######################## */
+
+.showcase{
+    /* border: 4px solid red; */
+    height: 50rem;
+    background: #ddd;
+}
+.showcase h2{
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 0.5rem; 
+}
+.showcase p{
+    background: none;
+    color: rgba(54, 53, 53, 0.5);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.row{
+    /* border: 7px solid green; */
+    height: 22rem;
+    margin: 5rem 20rem;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.row1 .image-box, .row2 .text-box{
+float: left;
+width: 50%;
+}
+.row2 .image-box, .row1 .text-box{
+float: right;
+width: 50%;
+}
+.row1 .image-box{
+    background: url(../image/showcase-photo3.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.row1 .text-box{
+    padding: 1.5rem 1rem;
+    object-fit: cover;
+    letter-spacing: 0.1em;
+}
+.row2 .image-box{
+    background: url(../image/showcase-photo1.jpg);
+    height: 100%;
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.row2 .text-box{
+    padding: 1.5rem 1rem;
+    object-fit: cover;
+    letter-spacing: 0.1em;
+}
+.text-box button{
+    border: 2px solid red;
+    border-radius: 3rem;
+    background: transparent;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.text-box button:hover{
+    color: #fff;
+    background: red;
+}
+
+
+/* ##########################Flex Box styling############################################# */
+
+.flex-box{
+    margin-top: 5rem;
+    /* border: 2px solid red; */
+    background: #fff;
+    height: 30rem;
+    padding-top: 2rem;
+    /* box-shadow: 0px 0px 20px 0px #000; */
+}
+.flex-box .container .logo{
+    color: red;
+}
+.flex-box .container .column1{
+    /* border: 3px solid green;  */
+    text-align: center;  
+    background: #222;
+    float: left;
+    max-width: 1200px;
+    width: 25%;
+    height: 20rem;
+    margin-left:13rem;
+    margin-top: 3rem;
+    box-shadow: -2px -2px 20px 2px #aaa;
+}
+.flex-box .container .column1 h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+    /* margin-top: 0.01em; */
+    margin-bottom: 1rem;
+    letter-spacing: .2em;
+}
+.flex-box .container .column1 p{
+ line-height: 2em; 
+ padding-left: 2rem;
+ padding-right: 2rem;
+ background: none;
+}
+.flex-box .container .column2{
+    color: #fff;
+}
+.flex-box .container .column1, .column3 i{
+    color: red;
+}
+
+
+.flex-box .container .column2{
+    /* border: 3px solid blue;  */
+    text-align: center; 
+    background: rgba(255, 0, 60, 0.929);
+    float: left;
+    max-width: 1200px;
+    width: 25%;
+    height: 20rem;
+    margin-top: 3rem;
+    /* box-shadow: 0px 0px 10px 1px  #aaa; */
+
+}
+.flex-box .container .column2 h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+    /* margin-top: 0.01em; */
+    margin-bottom: 1rem;
+    letter-spacing: .2em;
+}
+.flex-box .container .column2 p{
+ line-height: 2em; 
+ padding-left: 2rem;
+ padding-right: 2rem;
+ background: none;
+}
+
+
+.flex-box .container .column3{
+    /* border: 3px solid gold;  */
+    text-align: center;  
+    background: #222;
+    float: left;
+    max-width: 1200px;
+    width: 25%;
+    height: 20rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 20px 2px #aaa;
+}
+.flex-box .container .column3 h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+    /* margin-top: 0.01em; */
+    margin-bottom: 1rem;
+    letter-spacing: .2em;
+}
+.flex-box .container .column3 p{
+ line-height: 2em; 
+ padding-left: 2rem;
+ padding-right: 2rem;
+ background: none;
+}
+
+/* ##############################Footer Section Styling########################### */
+.footer{
+    background: #222;
+    color: #fff;
+    height: 10rem;
+    text-align: center;
+}
+i{
+    /* display: inline-block; */
+    margin-top: .5em;
+    padding: 1rem;
+    cursor: pointer;
+}
+.footer h5{
+    font-size: 1em;
+    font-weight: 600;
+    word-spacing: .5em;
+    margin-top: 1em;
+}
+span{
+    font-size: 1.2em;
+}
+
+/* #########################About Section navigation bar Styling############################ */
+
+.main-about{
+    background:#fff;
+}
+ .about{
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+    /* display: block; */
+    background: #222;
+    height: 7em;
+}
+.about .about-logo{
+    display:inline-block;
+    padding: 1em;
+    font-weight: 400;
+}
+.about .nav-tools{
+    display: inline-block;
+    margin-left: 50em;
+}
+.about .nav-tools a{
+    color: #ddd;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.about .nav-tools a:hover{
+    padding-bottom: .2em;
+    border-bottom: 2px solid #ddd;
+}
+
+/* ######################### About Section Styling ############################ */
+
+.about-section{
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    width: 70%;
+    /* text-align: center; */
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+.about-section .heading1{
+    font-size: 2.3em;
+    color: rgba(34, 34, 34, 0.903);
+    font-weight: 500;
+    /* border: 2px solid gray; */
+    margin-bottom: 0.1em;
+}
+.about-section hr{
+    background: rgba(255, 68, 0, 0.854);
+    height: 0.5em;
+    border-radius: 1.5em;
+}
+.about-section p{
+    background: none;
+    color: rgba(34, 34, 34, 0.576);
+    font-weight: 600;
+    line-height: 1.6em;
+}
+.about-section .left-checks{
+    display:inline-block;
+    /* border: 5px solid green; */
+    margin-left: 10em;
+    padding: 0 2em;
+    margin-bottom: 2em;
+}
+.about-section .left-checks span{
+    color: orangered;
+}
+.about-section .left-checks li{
+    display:block;
+    color: rgba(34, 34, 34, 0.576);
+    word-spacing: .3em;
+    font-weight: 600;
+}
+.about-section .left-checks ul{
+    /* border: 5px solid greenyellow; */
+    display: block;
+    padding: 0 2em;
+}
+.about-section .right-checks{
+    display: inline-block;
+    margin-left: 12em;
+    padding: 0 2em;
+    margin-bottom: 2em;
+}
+.about-section .right-checks span{
+    color: orangered;
+}
+.about-section .right-checks li{
+    color: rgba(34, 34, 34, 0.576);
+    font-weight: 600;
+    word-spacing: .3em;
+    display: block;
+}
+.about-section .right-checks ul{
+    /* border: 5px solid salmon; */
+    display: block;
+    padding: 0 2em;
+}
+.about-section .data{
+    /* border: 6px solid greenyellow; */
+    max-width: 1200px;
+}
+.about-section .data h2{
+    display: block;
+    color: rgb(255, 68, 0);
+}
+.about-section .data p{
+    padding-top: 0.1em;
+    /* border: 3px solid sienna; */
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    font-weight: 700;
+}
+.about-section .data .travelled{
+    /* border: 3px solid saddlebrown; */
+    display: inline-block;
+    width: 24.7%;
+    /* padding-left: 6em; */
+    text-align: center;
+}
+.about-section .data .place{
+    /* border: 3px solid seagreen; */
+    display: inline-block;
+    width: 24.7%;
+    text-align: center;
+}
+.about-section .data .guide{
+    /* border: 3px solid skyblue; */
+    display: inline-block;
+    width: 24.7%;
+    text-align: center;
+}
+.about-section .data .sport{
+    /* border: 3px solid slateblue; */
+    display: inline-block;
+    width: 24.7%;
+    text-align: center;
+}
+.about-section .about-last{
+
+    box-shadow: 5px 5px 20px 0px rgba(34, 34, 34, 0.393);
+    background:#ff5d5d;
+    height: 6.7em;
+    margin-top: 1em;
+}
+.about-section .about-last p{
+    float: left;
+    font-weight: 600;
+    letter-spacing: .12em;
+    word-spacing: .5em;
+    padding: 1em 0.7em;
+    font-size: 1.3em;
+    max-width: 1200px;
+    width: 50%;
+    color: #fff;
+}
+.about-section .about-last .about-lasttext{
+    float: left;
+    border: 4px solid #fff;
+    margin-left: 7.8em;
+    padding: 0.5em 1.8em;
+    /* margin-bottom: 2em; */
+    margin-top: 1rem;
+}
+.about-section .about-last .about-lasttext:hover{
+    color:#ff5d5d;
+    background: #f4f4f4;
+    
+}
+.about-section .about-last::after{
+content: '';
+display: block;
+clear: both;
+}
+
+/* ########################## CONTACT STYLING ############################## */
+.left-box{
+    background: #f4f4f4;
+    border: 2px solid saddlebrown;
+    float: left;
+}
+.left-box p{
+    display: block;
+}
